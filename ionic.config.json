@@ -1,5 +1,7 @@
 {
   "name": "bluewater-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -14,12 +14,52 @@ export class AppComponent {
     {
       title: 'Home',
       url: '/home',
-      icon: 'home'
+      icon: ['fas', 'home']
     },
     {
       title: 'List',
       url: '/list',
-      icon: 'list'
+      icon: ['fas', 'list']
+    },
+    {
+      title: 'News',
+      url: '/news',
+      icon: ['fas', 'newspaper']
+    },
+    {
+      title: 'Offers',
+      url: '/offers',
+      icon: ['fas', 'hand-holding-usd']
+    },
+    {
+      title: 'Accommodations',
+      url: '/accommodations',
+      icon: ['fas', 'bed']
+    },
+    {
+      title: 'Dining',
+      url: '/dining',
+      icon: ['fas', 'utensils']
+    },
+    {
+      title: 'Spa',
+      url: '/spa',
+      icon: ['fas', 'spa']
+    },
+    {
+      title: 'Adventure',
+      url: '/adventure',
+      icon: ['fas', 'swimmer']
+    },
+    {
+      title: 'Events',
+      url: '/events',
+      icon: ['fas', 'calendar-alt']
+    },
+    {
+      title: 'Gallery',
+      url: '/gallery',
+      icon: ['fas', 'images']
     }
   ];
 

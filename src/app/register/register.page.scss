@@ -1,0 +1,68 @@
+.bg-image {
+    --background: url('/../assets/images/landing_background.jpg') no-repeat center center / cover;;    
+}
+
+.no-scroll .scroll-content {
+    overflow: hidden;
+}
+
+.btn-wrapper {
+    position: relative;
+    top: 50%;
+}
+
+$white-color: #fff;
+$height100: 100%;
+
+ion-item {
+    --background: transparent;
+    --border-color: $white-color;
+    color: $white-color;
+}
+
+ion-grid {
+    width:100%;
+    height: $height100;
+    background: transparent;
+    margin-top: 80%;
+}
+
+ion-row {
+    height: $height100;
+}
+
+ion-col {
+    background: transparent;
+}
+
+ion-button {
+    font-weight: 300;
+}
+
+.btn-round {
+    --border-radius: 20px;
+    --border-color: $white-color;
+    --background: transparent;
+    --vertical-align: middle;
+    --padding-start: 10px;
+    --padding-end: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.input-field-transparent,
+.input-field-transparent:focus,
+.input-field-transparent:active {
+    background-color: transparent;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+    ion-grid {
+        background: transparent;
+    }
+    ion-col {
+        border: none;
+    }
+}
