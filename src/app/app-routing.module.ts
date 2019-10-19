@@ -11,7 +11,7 @@ const routes: Routes = [
         loadChildren: './home/home.module#HomePageModule'
     },
     { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
-    { path: 'accommodation', loadChildren: './pages/accommodation/accommodation.module#AccommodationPageModule' },
+    { path: 'accommodations', loadChildren: './pages/accommodation/accommodation.module#AccommodationPageModule' },
     { path: 'dining', loadChildren: './pages/dining/dining.module#DiningPageModule' },
     { path: 'news', loadChildren: './pages/news/news.module#NewsPageModule' },
     { path: 'offers', loadChildren: './pages/offers/offers.module#OffersPageModule' },

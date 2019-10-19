@@ -17,11 +17,6 @@ export class AppComponent {
             icon: ['fas', 'home']
         },
         {
-            title: 'List',
-            url: '/list',
-            icon: ['fas', 'list']
-        },
-        {
             title: 'News',
             url: '/news',
             icon: ['fas', 'newspaper']
