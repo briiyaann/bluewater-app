@@ -58,7 +58,6 @@ export class LoginPage implements OnInit {
             await loader.present();
 
             var data = this.auth.login(this.loginForm.value).then((data: any) => {
-                alert(data);
                 loader.dismiss();
                 if (data.error) {
                     this.loginError = data.error;

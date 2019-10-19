@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://app.mybluewater.store/api/',
+  baseUrl: 'http://app.mybluewater.store/',
 };
 
 /*

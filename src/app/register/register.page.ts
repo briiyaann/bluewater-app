@@ -25,11 +25,6 @@ export class RegisterPage implements OnInit {
 	nonce:any;
 
 	ngOnInit() {
-		let get_nonce = this.auth.get_nonce().then((data:any) => {
-			if(data.nonce) {
-				this.nonce = data.nonce;
-			}
-		});
 	}
 
 	async register() {
@@ -37,7 +32,6 @@ export class RegisterPage implements OnInit {
 		this.regError = false;
 		
 		if(this.registerForm.valid) {
-			this.registerForm.value.nonce = this.nonce;
 			this.registerForm.value.display_name = this.registerForm.value.username;
 			const loader = await this.loading.create({
 				message: 'Please wait...',

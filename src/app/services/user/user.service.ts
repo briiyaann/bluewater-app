@@ -31,7 +31,7 @@ export class UserService {
 
 		query_string = query_string.substring(0, query_string.length - 1);
 
-		let loggedin = await this.http.post(`${this.baseUrl}user/generate_auth_cookie?` + query_string, data).toPromise();
+		let loggedin = await this.http.post(`${this.baseUrl}public/api/v1/login`, data, httpOptions).toPromise();
 		
 		return loggedin;
 	}
@@ -56,14 +56,9 @@ export class UserService {
 
 		query_string = query_string.substring(0, query_string.length - 1);
 
-		let register = await this.http.post(`${this.baseUrl}user/register?notify=no&` + query_string, data).toPromise();
+		let register = await this.http.post(`${this.baseUrl}public/api/v1/register`, data).toPromise();
 		
 		return register;
 	}
 
-	async get_nonce() {
-		let nonce = await this.http.get(`${this.baseUrl}get_nonce?controller=user&method=register`).toPromise();
-
-		return nonce;
-	}
 }
