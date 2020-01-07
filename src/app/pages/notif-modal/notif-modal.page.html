@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Notifications</ion-title>
+    <ion-buttons slot="start">
+        <ion-button color="primary" (click)="dismiss()">
+            Close
+        </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let notif of (notifications)" [className]="notif.status == 'unread' ? 'unread-status' : ''" routerLink="notif-page/{{ notif.id }}" (click)="dismiss()">
+        <ion-thumbnail slot="start">
+            <ion-img src="{{ baseUrl }}public/{{ notif.img_url }}"></ion-img>
+          </ion-thumbnail>
+          <ion-label>
+            <h2>{{ notif.title }}</h2>
+            <p>
+              <ion-icon name="clock"></ion-icon>
+              {{ notif.created_at | date }}
+            </p>
+            <p>{{ notif.excerpt }}</p>
+          </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

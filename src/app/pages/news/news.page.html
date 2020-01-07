@@ -1,0 +1,34 @@
+<!-- <ion-header>
+	<ion-toolbar color="primary">
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-buttons slot="end">
+			<ion-icon icon="notifications" style="font-size: 30px;"></ion-icon>
+			<ion-badge id="notifications-badge" color="danger" *ngIf="unread_notifications != 0">
+				{{ unread_notifications }}</ion-badge>
+		</ion-buttons>
+		<ion-title>
+			News
+		</ion-title>
+	</ion-toolbar>
+</ion-header> -->
+<app-header></app-header>
+
+<ion-content>
+	<ion-list>
+		<ion-item *ngFor="let notif of (news_notification)" button routerLink="/notif-page/{{ notif.id }}">
+			<ion-thumbnail slot="start">
+				<ion-img src="{{ baseUrl }}public/{{ notif.img_url }}"></ion-img>
+			</ion-thumbnail>
+			<ion-label>
+				<h2>{{ notif.title }}</h2>
+				<p>
+					<ion-icon name="clock"></ion-icon>
+					{{ notif.created_at | date }}
+				</p>
+				<p>{{ notif.excerpt }}</p>
+			</ion-label>
+		</ion-item>
+	</ion-list>
+</ion-content>

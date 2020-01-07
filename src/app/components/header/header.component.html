@@ -1,0 +1,15 @@
+<ion-header>
+	<ion-toolbar color="primary">
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-buttons slot="end" (click)="showNotif()">
+			<ion-icon icon="notifications" style="font-size: 30px;">
+			</ion-icon>
+			<ion-badge id="notifications-badge" color="danger" *ngIf="unread_notifications != 0">{{ unread_notifications }}</ion-badge>
+		</ion-buttons>
+		<ion-title>
+			{{ headerTitle | titlecase }}
+		</ion-title>
+	</ion-toolbar>
+</ion-header>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "597010943889",
+    "firebase_url": "https://bluewater-maribago.firebaseio.com",
+    "project_id": "bluewater-maribago",
+    "storage_bucket": "bluewater-maribago.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597010943889:android:e36c5b1fa50e3f3a489430",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597010943889-ifags7fc098r7a7gk9nsi6k81v7p6o68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3bxsoGIFyKkov8aMw6U8o4a96fNuKs2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597010943889-ifags7fc098r7a7gk9nsi6k81v7p6o68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

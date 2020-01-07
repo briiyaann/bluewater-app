@@ -1,44 +1,85 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<!-- <ion-header>
+	<ion-toolbar color="primary">
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-buttons slot="end" (click)="showNotif()">
+			<ion-icon icon="notifications" style="font-size: 30px;">
+			</ion-icon>
+			<ion-badge id="notifications-badge" color="danger" *ngIf="unread_notifications != 0">{{ unread_notifications }}</ion-badge>
+		</ion-buttons>
+		<ion-title>
+			{{ headerTitle | titlecase }}
+		</ion-title>
+	</ion-toolbar>
+</ion-header> -->
+<app-header></app-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+	<ion-row>
+		<ion-col size="12" class="ion-no-padding" style="max-height: 200px;">
+			<img style="height: 200px; width: 100%" src="/../assets/images/main_top_image.jpg" alt="">
+		</ion-col>
+	</ion-row>
+	<ion-row class="ion-no-padding" style="height: 138px;">
+		<ion-col size="6" class="ion-no-padding" routerLink="/news" style="background: url('/../assets/images/news-bg.jpg') center">
+			<div class="title-text no-border">
+				<img style="height: 30px; width: 30px;" src="/../assets/images/news-icon.svg" alt="">
+				<span>News</span>
+			</div>
+		</ion-col>
+		<ion-col size="6" class="ion-no-padding" routerLink="/offers" style="background: url('/../assets/images/offers-bg.jpg') center">
+			<div class="title-text">
+				<img style="height: 30px; width: 30px;" src="/../assets/images/offers-icon.svg" alt="">
+				<span>Offers</span>
+			</div>
+		</ion-col>
+	</ion-row>
+	<ion-row class="ion-no-padding" style="height: 138px;">
+		<ion-col size="6" class="ion-no-padding" routerLink="/accommodations" style="background: url('/../assets/images/accomodation-bg.jpg') center">
+			<div class="title-text no-border">
+				<img style="height: 30px; width: 30px;" src="/../assets/images/accomodation-icon.svg" alt="">
+				<span>Accomodations</span>
+			</div>
+		</ion-col>
+		<ion-col size="6" class="ion-no-padding" routerLink="/dining" style="background: url('/../assets/images/dining-bg.jpg') center">
+			<div class="title-text">
+				<img style="height: 30px; width: 30px;" src="/../assets/images/dining-icon.svg" alt="">
+				<span>Dining</span>
+			</div>
+		</ion-col>
+	</ion-row>
+	<ion-row class="ion-no-padding" style="height: 138px;">
+		<ion-col size="6" class="ion-no-padding" routerLink="/spa" style="background: url('/../assets/images/spa-bg.jpg') center">
+			<div class="title-text no-border">
+				<img style="height: 30px; width: 30px;" src="/../assets/images/spa-icon.svg" alt="">
+				<span>Spa</span>
+			</div>
+		</ion-col>
+		<ion-col size="6" class="ion-no-padding" routerLink="/adventure" style="background: url('/../assets/images/adventure-bg.jpg') center">
+			<div class="title-text">
+				<img style="height: 30px; width: 30px;" src="/../assets/images/adventure-icon.svg" alt="">
+				<span>Adventure</span>
+			</div>
+		</ion-col>
+	</ion-row>
+	<ion-row class="ion-no-padding" style="height: 138px;">
+		<ion-col size="6" class="ion-no-padding" routerLink="/events" style="background: url('/../assets/images/events-bg.jpg') center">
+			<div class="title-text no-border">
+				<img style="height: 30px; width: 30px;" src="/../assets/images/events-icon.svg" alt="">
+				<span>Events</span>
+			</div>
+		</ion-col>
+		<ion-col size="6" class="ion-no-padding" routerLink="/gallery" style="background: url('/../assets/images/gallery-bg.jpg') center">
+			<div class="title-text">
+				<img style="height: 30px; width: 30px;" src="/../assets/images/gallery-icon.svg" alt="">
+				<span>Gallery</span>
+			</div>
+		</ion-col>
+	</ion-row>
 </ion-content>
+<ion-footer>
+	<ion-toolbar color="primary">
+		<ion-button expand="full" fill="clear" color="light" style="font-weight: 600" (click)="openBrowser()">Book Now</ion-button>
+	</ion-toolbar>
+</ion-footer>
