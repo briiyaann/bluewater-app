@@ -14,19 +14,19 @@
 <app-header></app-header>
 
 <ion-content>
-	<ion-list>
-		<ion-item *ngFor="let notif of (news_notification)" button routerLink="/notif-page/{{ notif.id }}">
-			<ion-thumbnail slot="start">
-				<ion-img src="{{ baseUrl }}public/{{ notif.img_url }}"></ion-img>
-			</ion-thumbnail>
-			<ion-label>
-				<h2>{{ notif.title }}</h2>
-				<p>
-					<ion-icon name="clock"></ion-icon>
-					{{ notif.created_at | date }}
-				</p>
-				<p>{{ notif.excerpt }}</p>
-			</ion-label>
-		</ion-item>
-	</ion-list>
+    <ion-grid>
+        <ion-item *ngFor="let notif of (news_notification)" button routerLink="/notif-page/{{ notif.id }}">
+            <ion-card>
+                <ion-img src="{{ baseUrl }}public/{{ notif.img_url }}"></ion-img>
+                <ion-label>
+                    <h2>{{ notif.title }}</h2>
+                    <p>
+                        <span class="icon"><ion-icon name="clock"></ion-icon></span>
+                        <span class="desc">{{ notif.created_at | date }}</span>
+                    </p>
+                    <p>{{ notif.excerpt }}</p>
+                </ion-label>
+            </ion-card>
+        </ion-item>
+    </ion-grid>
 </ion-content>

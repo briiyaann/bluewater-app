@@ -1,0 +1,21 @@
+ion-label {
+  padding: 15px;
+
+  h2 {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #1275bc;
+  }
+
+  .icon {
+    vertical-align: middle;
+    opacity: .8;
+  }
+
+  .desc {
+    font-size: 12px;
+    margin-left: 3px;
+  }
+}
