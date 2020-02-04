@@ -5,3 +5,23 @@
         font-weight: bold;
     }
 }
+ion-label {
+    h2 {
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #1275bc;
+        font-size: 14px;
+    }
+
+    .icon {
+        vertical-align: middle;
+        opacity: .8;
+    }
+
+    .desc {
+        font-size: 12px;
+        margin-left: 3px;
+    }
+}
