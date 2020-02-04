@@ -18,8 +18,8 @@
           <ion-label>
             <h2>{{ notif.title }}</h2>
             <p>
-              <ion-icon name="clock"></ion-icon>
-              {{ notif.created_at | date }}
+                <span class="icon"><ion-icon name="clock"></ion-icon></span>
+                <span class="desc">{{ notif.created_at | date }}</span>
             </p>
             <p>{{ notif.excerpt }}</p>
           </ion-label>
